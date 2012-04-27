@@ -1,19 +1,19 @@
-This is a simple Sinatra (ruby) app that shows how to use the <code>oauth</code> gem to authenticate against Twitter and get the access token / secret that you need to store when you want to do 3-legged authorization.
+This is a simple Sinatra (ruby) app that shows how to use the oauth gem to authenticate against Twitter and get the access token / secret that you need to store when you want to do 3-legged authorization.
 
 
 == Step 1
 
 Edit the oauth.rb file and change put your API key and secret into the OAuth constructor. For example:
 
-<code>def client
-  OAuth::Consumer.new( 'key12345', 'secret123123', :site => 'https://api.twitter.com' )
-end</code>
+  def client
+    OAuth::Consumer.new( 'key12345', 'secret123123', :site => 'https://api.twitter.com' )
+  end
 
 == Step 2
 
 Run the app:
 
-<code>ruby -rubygems oauth.rb</code>
+  $ ruby -rubygems oauth.rb
 
 == Step 3
 
