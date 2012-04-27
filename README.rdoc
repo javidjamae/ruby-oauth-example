@@ -5,11 +5,9 @@ This is a simple Sinatra (ruby) app that shows how to use the <code>oauth</code>
 
 Edit the oauth.rb file and change put your API key and secret into the OAuth constructor. For example:
 
-<code>
-def client
+<code>def client
   OAuth::Consumer.new( 'key12345', 'secret123123', :site => 'https://api.twitter.com' )
-end
-</code>
+end</code>
 
 == Step 2
 
