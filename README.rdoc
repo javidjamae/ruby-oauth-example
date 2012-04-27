@@ -1,0 +1,27 @@
+twitter-oauth-example
+=====================
+
+A simple Sinatra (ruby) app that shows how to authenticate against Twitter and get the access token / secret that you need to store
+
+
+== Step 1
+
+Edit the oauth.rb file and change put your API key and secret into the OAuth constructor. For example:
+
+<code>
+def client
+  OAuth::Consumer.new( 'key12345', 'secret123123', :site => 'https://api.twitter.com' )
+end
+</code>
+
+== Step 2
+
+Run the app:
+
+<code>ruby -rubygems oauth.rb</code>
+
+== Step 3
+
+Go to the following URL in your browser:
+
+<a href="http://localhost:4567/auth/twitter" target="_blank">http://localhost:4567/auth/twitter</a>
